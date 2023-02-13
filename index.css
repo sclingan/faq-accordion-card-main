@@ -1,0 +1,133 @@
+/* CSS reset */
+/*  1. Use a more-intuitive box-sizing model. */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /*  2. Remove default margin  */
+  * {
+    margin: 0;
+  }
+  
+  /*  3. Allow percentage-based heights in the application */
+  html, body {
+    height: 100%;
+  }
+  
+  /*
+    Typographic tweaks!  4. Add accessible line-height  5. Improve text rendering */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /*  6. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /*  7. Remove built-in form typography styles */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /*  8. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /*  9. Create a root stacking context */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  /* CSS variables */
+  :root {
+    --text-desaturated-blue: hsl(238, 29%, 16%);
+    --text-soft-red: hsl(14, 88%, 65%);
+    --gradient-soft-violet: hsl(273, 75%, 66%);
+    --gradient-soft-blue: hsl(240, 73%, 65%);
+    --text-dark-gray-blue: hsl(237, 12%, 33%);
+    --text-dark-grayish-blue: hsl(240, 6%, 50%);
+    --dividers-gray-blue: hsl(240, 5%, 91%);
+    --font-size: 0.75rem;
+    --fw-400: 400;
+    --fw-700: 700;
+    --ff: 'Kumbh Sans', sans-serif;
+  }
+
+  body {
+    background-image: linear-gradient(var(--gradient-soft-violet), var(--gradient-soft-blue));
+    font-family: var(--ff);
+    font-weight: var(--fw-400);
+    font-size: var(--font-size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-desaturated-blue);
+  }
+
+  .section__card {
+    border-radius: 1rem;
+    max-width: 20.625rem;
+    background-color: hsl(0, 0%, 96%);
+    padding: 2rem;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: var(--fw-700);
+    padding-block: 1.5rem;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  ul li label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--dividers-gray-blue);
+    padding-block: 1rem;
+    cursor: pointer;
+  }
+
+  .chevron {
+    background-color: transparent;
+  }
+
+  ul li label:hover {
+    color: var(--text-soft-red);
+  }
+
+  ul li label + input[type='radio']:checked + .answer {
+    height: 3.5rem;
+    border-bottom: 1px solid var(--dividers-gray-blue);
+  }
+
+  .answer {
+    height: 0;
+    overflow: hidden;
+    transition: height .5s;
+  }
+
+  input {
+    display: none;
+  }
+
+  footer {
+    /* padding-top: 4rem; */
+  }
+
+  .attribution { 
+    font-size: 11px; 
+    text-align: center; 
+  }
+
+  .attribution a {
+     color: hsl(228, 45%, 44%); 
+  }

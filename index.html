@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <!-- SEO -->
+  <meta name="description" content="Frontend Mentor FAQ challenge">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  <!-- Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+</head>
+<body>
+  <main>
+    <section class="section__card">
+      <h1>FAQ</h1>
+      <ul>
+        <li><label for="question_one" aria-expanded="false">How many team members can I invite? <img class='chevron' src='./images/icon-arrow-down.svg'></label>
+        <input type='radio' name='accordion' id="question_one">
+        <p class="answer">
+          You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.
+        </p></li>
+        <li><label for="question_two" aria-expanded="false">What is the maximum file upload size? <img class='chevron' src='./images/icon-arrow-down.svg'></label>
+          <input type='radio' name='accordion' id="question_two" >
+          <p class="answer">
+            No more than 2GB. All files in your account must fit your allotted storage space.
+          </p></li>
+          <li><label for="question_three" aria-expanded="false">How do I reset my password?<img class='chevron' src='./images/icon-arrow-down.svg'></label>
+            <input type='radio' name='accordion' id="question_three">
+            <p class="answer">
+              Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.
+            </p></li>
+            <li><label for="question_four" aria-expanded="false">Can I cancel my subscription?<img class='chevron' src='./images/icon-arrow-down.svg'></label>
+              <input type='radio' name='accordion' id="question_four">
+              <p class="answer">
+                Yes! Send us a message and we’ll process your request no questions asked.
+              </p></li>
+              <li><label for="question_five" aria-expanded="false">Do you provide additional support?<img class='chevron' src='./images/icon-arrow-down.svg'></label>
+                <input type='radio' name='accordion' id="question_five">
+                <p class="answer">
+                  Chat and email support is available 24/7. Phone lines are open during normal business hours.
+                </p></li>
+      </ul>
+    </section>
+    <footer>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Scott Clingan</a>.
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
