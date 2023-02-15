@@ -87,36 +87,29 @@
     padding: 0;
   }
 
-  ul li label {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  summary {
+    padding-block: 0.5rem;
     border-bottom: 1px solid var(--dividers-gray-blue);
-    padding-block: 1rem;
+    list-style-type: none;
     cursor: pointer;
   }
 
-  .chevron {
-    background-color: transparent;
-  }
-
-  ul li label:hover {
+  summary:hover {
     color: var(--text-soft-red);
   }
 
-  ul li label + input[type='radio']:checked + .answer {
-    height: 3.5rem;
+  summary::after {
+    content: url('./images/icon-arrow-down.svg');
+    padding-left: 1rem;
+  }
+
+  details[open] > summary {
+    font-weight: var(--fw-700);
+    border-bottom: none;
+  }
+
+  details[open] > p {
     border-bottom: 1px solid var(--dividers-gray-blue);
-  }
-
-  .answer {
-    height: 0;
-    overflow: hidden;
-    transition: height .5s;
-  }
-
-  input {
-    display: none;
   }
 
   footer {
