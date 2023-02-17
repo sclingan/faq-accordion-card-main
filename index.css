@@ -70,26 +70,29 @@
   }
 
   .section__card {
+    position: relative;
+    background-color: hsl(0, 0%, 96%);
     border-radius: 1rem;
     max-width: 20.625rem;
-    background-color: hsl(0, 0%, 96%);
     padding: 2rem;
-    position: relative;
+    box-shadow: 0.2rem 1.2rem 0.8rem rgb(77, 67, 105);
   }
 
   .product_img {
     position: absolute;
+    max-width: 80%;
     top: -7.3rem;
     right: 1.9rem;
-    max-width: 80%;
+    filter: drop-shadow(0.2rem 2rem 0.1rem var(--dividers-gray-blue));
+    z-index: 1;
   }
 
   h1 {
     text-align: center;
     font-size: 2rem;
     font-weight: var(--fw-700);
-    padding-block: 1.5rem;
-    padding-top: 4rem;
+    padding-block: 1rem;
+    padding-top: 7rem;
   }
 
   ul {
@@ -99,9 +102,10 @@
   }
 
   summary {
-    padding-block: 1rem;
+    padding-block: 0.7rem;
     border-bottom: 1px solid var(--dividers-gray-blue);
     list-style-type: none;
+    color: var(--text-dark-gray-blue);
     cursor: pointer;
   }
 
@@ -111,7 +115,9 @@
 
   summary::after {
     content: url('./images/icon-arrow-down.svg');
-    padding-left: 2rem;
+    display: inline-block;
+    padding-left: 1rem;
+    align-items: right;
   }
 
   details[open] > summary::after { 
@@ -120,16 +126,30 @@
 
   details[open] > summary {
     font-weight: var(--fw-700);
+    font-size: 0.8rem;
     border-bottom: none;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-1vw);
+    }
+    100% {
+      opacity: 1;
+    }
   }
 
   details[open] > p {
     border-bottom: 1px solid var(--dividers-gray-blue);
     padding-bottom: 0.8rem;
+    color: var(--text-dark-grayish-blue);
+    animation-name: fadeIn;
+    animation-duration: 1s;
   }
 
   footer {
-    /* padding-top: 4rem; */
+    padding-top: 4rem;
   }
 
   .attribution { 
