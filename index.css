@@ -66,6 +66,7 @@
     align-items: center;
     justify-content: center;
     color: var(--text-desaturated-blue);
+    padding-top: 8rem;
   }
 
   .section__card {
@@ -73,6 +74,14 @@
     max-width: 20.625rem;
     background-color: hsl(0, 0%, 96%);
     padding: 2rem;
+    position: relative;
+  }
+
+  .product_img {
+    position: absolute;
+    top: -7.3rem;
+    right: 1.9rem;
+    max-width: 80%;
   }
 
   h1 {
@@ -80,6 +89,7 @@
     font-size: 2rem;
     font-weight: var(--fw-700);
     padding-block: 1.5rem;
+    padding-top: 4rem;
   }
 
   ul {
