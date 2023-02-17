@@ -92,13 +92,14 @@
     font-size: 2rem;
     font-weight: var(--fw-700);
     padding-block: 1rem;
-    padding-top: 7rem;
+    padding-top: 6.6rem;
   }
 
   ul {
     list-style-type: none;
     padding: 0;
     padding-bottom: 1rem;
+    position: relative;
   }
 
   summary {
@@ -107,6 +108,7 @@
     list-style-type: none;
     color: var(--text-dark-gray-blue);
     cursor: pointer;
+    padding-right: 1rem;
   }
 
   summary:hover {
@@ -116,12 +118,14 @@
   summary::after {
     content: url('./images/icon-arrow-down.svg');
     display: inline-block;
+    position: absolute;
+    right: -0.2rem;
     padding-left: 1rem;
-    align-items: right;
   }
 
   details[open] > summary::after { 
     transform: rotate(180deg);
+    right: -1.2rem;
   }
 
   details[open] > summary {
