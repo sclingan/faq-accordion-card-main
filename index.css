@@ -74,7 +74,8 @@
     background-color: hsl(0, 0%, 96%);
     border-radius: 1rem;
     max-width: 20.625rem;
-    padding: 2rem;
+    /* padding: 2rem; */
+    padding: 1rem;
     box-shadow: 0.2rem 1.2rem 0.8rem rgb(77, 67, 105);
   }
 
