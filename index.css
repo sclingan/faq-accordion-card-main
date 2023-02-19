@@ -81,9 +81,12 @@
 
   .product_img {
     position: absolute;
-    max-width: 80%;
-    top: -7.3rem;
-    right: 1.9rem;
+    /* max-width: 80%; */
+    max-width: 70%;
+    /* top: -7.3rem; */
+    top: -6.5rem;
+    /* right: 1.9rem; */
+    right: 2.5rem;
     filter: drop-shadow(0.2rem 2rem 0.1rem var(--dividers-gray-blue));
     z-index: 1;
   }
@@ -93,13 +96,14 @@
     font-size: 2rem;
     font-weight: var(--fw-700);
     padding-block: 1rem;
-    padding-top: 6.6rem;
+    padding-top: 6.5rem;
+    /* padding-top: 8.5rem; */
   }
 
   ul {
     list-style-type: none;
     padding: 0;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
     position: relative;
   }
 
