@@ -5,6 +5,15 @@ const questionArray = Array.from(question);
 
 questionArray.forEach(e => e.addEventListener('toggle', (event) =>
 {
- console.log(e);
-}
-));
+  console.log(e);
+  
+}));
+
+
+
+
+
+
+
+// e.removeAttribute('open');
+// questionArray[id].setAttribute('open', true);
