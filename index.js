@@ -1,19 +1,15 @@
-const question = document.getElementsByTagName('details');
 
 
-const questionArray = Array.from(question);
-
-questionArray.forEach(e => e.addEventListener('toggle', (event) =>
-{
-  console.log(e);
-  
-}));
-
-
+var details = [...document.querySelectorAll('details')];
+document.addEventListener('click', function(e) {
+  if (!details.some(f => f.contains(e.target))) {
+    details.forEach(f => f.removeAttribute('open'));
+  } else {
+    details.forEach(f => !f.contains(e.target) ? f.removeAttribute('open') : '');
+  }
+})
 
 
 
 
 
-// e.removeAttribute('open');
-// questionArray[id].setAttribute('open', true);
