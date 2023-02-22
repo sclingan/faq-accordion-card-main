@@ -59,7 +59,6 @@
 
   /* TODO: 
       adjust footer background color on mobile
-      verify all sizes
       make sure on mobile card and image are centered
   */
 
@@ -114,7 +113,6 @@
   }
 
   summary {
-    /* padding-block: 1rem; */
     padding-block: 0.7rem;
     border-bottom: 1px solid var(--dividers-gray-blue);
     list-style-type: none;
@@ -175,4 +173,38 @@
 
   .attribution a {
      color: hsl(228, 45%, 44%); 
+  }
+
+  @media (min-width: 50rem){
+    
+    main {
+    }
+
+    .section__card {
+      min-width: 57.8125rem;
+      display: grid;
+      /* grid-template-columns: 20rem 30rem; */
+      grid-template-columns: 350px 450px;
+      overflow: hidden;
+    }
+
+    .product_img {
+      grid-column: 1/1;
+      grid-row: 2/2;
+      position: relative;
+      /* min-width: 90%; */
+      min-width: 100%;
+      padding-top: 2.5rem;
+    }
+
+    h1 {
+      grid-column: 2/2;
+      padding-block: 1rem;
+      text-align: left;
+      padding-top: 4rem;
+    }
+
+    ul {
+      grid-column: 2/2;
+    }
   }
