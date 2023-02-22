@@ -175,7 +175,7 @@
      color: hsl(228, 45%, 44%); 
   }
 
-  @media (min-width: 50rem){
+  @media (min-width: 60rem){ /* make this a little bigger */
     
     main {
     }
@@ -184,27 +184,33 @@
       min-width: 57.8125rem;
       display: grid;
       /* grid-template-columns: 20rem 30rem; */
-      grid-template-columns: 350px 450px;
+      grid-template-columns: 400px 450px;
       overflow: hidden;
+      padding: 0;
+      max-height: 700px; /* don't like this */
     }
 
     .product_img {
       grid-column: 1/1;
       grid-row: 2/2;
       position: relative;
+      background-image: url('./images/bg-pattern-desktop.svg');
       /* min-width: 90%; */
-      min-width: 100%;
-      padding-top: 2.5rem;
+      min-width: 120%;
+      padding-right: 3rem;
+      left: -5rem;
+      top: -3rem;
     }
 
     h1 {
       grid-column: 2/2;
       padding-block: 1rem;
       text-align: left;
-      padding-top: 4rem;
+      padding-left: 4rem;
     }
 
     ul {
       grid-column: 2/2;
+      padding-left: 4rem;
     }
   }
