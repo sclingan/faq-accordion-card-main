@@ -180,16 +180,15 @@
     .section__card {
       min-width: 57.8125rem;
       display: grid;
-      /* grid-template-columns: 400px 450px; */
+       background-image: url('./images/bg-pattern-desktop.svg');
+      background-repeat: no-repeat;
+      background-position: -36rem -19rem;
       grid-template-columns: 410px 450px;
       overflow: hidden;
       padding: 0;
     }
 
     .container {
-      background-image: url('./images/bg-pattern-desktop.svg');
-      background-repeat: no-repeat;
-      background-position: -37rem -18rem;
       grid-column: 1/1;
       grid-row: 1/2;
     }
@@ -198,6 +197,7 @@
       left: -5rem;
       top: 3rem;
       z-index: 0;
+      filter: none;
     }
 
     .container::before {
