@@ -60,6 +60,7 @@
   /* TODO: 
       adjust footer background color on mobile
       make sure on mobile card and image are centered
+      fix layout on 280px and 800-900px
   */
 
   body {
@@ -72,11 +73,11 @@
     justify-content: center;
     color: var(--text-desaturated-blue);
     padding-top: 8rem; /* fix this */
-    min-height: 100vh;
+    /* min-height: 100vh; */
   }
 
   main {
-    min-width: 20.625rem;
+    min-width: 22rem;
   }
 
   .section__card {
