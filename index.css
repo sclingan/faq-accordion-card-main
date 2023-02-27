@@ -58,8 +58,6 @@
   }
 
   /* TODO: 
-      adjust footer background color on mobile
-      make sure on mobile card and image are centered
       fix layout on 280px and 800-900px
   */
 
@@ -72,12 +70,12 @@
     align-items: center;
     justify-content: center;
     color: var(--text-desaturated-blue);
-    padding-top: 8rem; /* fix this */
-    /* min-height: 100vh; */
+    padding-top: 8rem; 
+    min-height: 100vh;
   }
 
   main {
-    min-width: 22rem;
+    padding-inline: 2rem;
   }
 
   .section__card {
@@ -144,7 +142,7 @@
     font-size: 0.8rem;
     border-bottom: none;
   }
-
+  /* Animate open/close of summary/details */
   @keyframes fadeIn {
     0% {
       opacity: 0;
