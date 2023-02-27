@@ -75,7 +75,7 @@
 
   main {
     padding-inline: 2rem;
-    padding-top: 4rem;
+    padding-top: 8rem;
   }
 
   .section__card {
@@ -195,7 +195,6 @@
     img {
       left: -5rem;
       top: 3rem;
-      z-index: 0;
       filter: none;
     }
 
@@ -204,7 +203,7 @@
       position: absolute;
       top: 12.3rem;
       left: -6rem;
-      z-index: 6;
+      z-index: 2;
     }
 
     h1 {
