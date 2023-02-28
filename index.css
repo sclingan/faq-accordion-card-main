@@ -71,11 +71,11 @@
     justify-content: center;
     color: var(--text-desaturated-blue);
     min-height: 100vh;
+    padding-top: 4rem;
   }
 
   main {
     padding-inline: 2rem;
-    padding-top: 8rem;
   }
 
   .section__card {
@@ -90,7 +90,6 @@
   img {
     position: absolute;
     max-width: 70%;
-    /* top: -6.5rem; */
     top: -5.5rem;
     right: 3rem;
     filter: drop-shadow(0.2rem 2rem 0.1rem var(--dividers-gray-blue));
@@ -102,7 +101,7 @@
     font-size: 2rem;
     font-weight: var(--fw-700);
     padding-block: 1rem;
-    padding-top: 6.5rem;
+    padding-top: 4.5rem;
   }
 
   ul {
@@ -160,19 +159,6 @@
     color: var(--text-dark-grayish-blue);
     animation-name: fadeIn;
     animation-duration: 1s;
-  }
-
-  footer {
-    padding-top: 4rem;
-  }
-
-  .attribution { 
-    font-size: 11px; 
-    text-align: center; 
-  }
-
-  .attribution a {
-     color: hsl(228, 45%, 44%); 
   }
 
   @media (min-width: 60rem){ 
