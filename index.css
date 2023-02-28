@@ -58,7 +58,8 @@
   }
 
   /* TODO: 
-      fix layout on 280px and 800-900px
+      fix layout on 280px
+      fix text size on 800-900px
   */
 
   body {
@@ -90,7 +91,7 @@
   img {
     position: absolute;
     max-width: 70%;
-    top: -5.5rem;
+    top: -5.2rem;
     right: 3rem;
     filter: drop-shadow(0.2rem 2rem 0.1rem var(--dividers-gray-blue));
     z-index: 0;
@@ -101,7 +102,7 @@
     font-size: 2rem;
     font-weight: var(--fw-700);
     padding-block: 1rem;
-    padding-top: 4.5rem;
+    padding-top: 6rem;
   }
 
   ul {
