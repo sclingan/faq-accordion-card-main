@@ -63,6 +63,7 @@
 
   body {
     background-image: linear-gradient(var(--gradient-soft-violet), var(--gradient-soft-blue));
+    background-repeat: no-repeat;
     font-family: var(--ff);
     font-weight: var(--fw-400);
     font-size: var(--font-size);
